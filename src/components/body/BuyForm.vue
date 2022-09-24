@@ -46,6 +46,14 @@ import VolkBuy from "./BuyComponents/VolkBuy.vue";
 import MercBuy from "./BuyComponents/MercBuy.vue";
 import HuyndaiBuy from "./BuyComponents/HuyndaiBuy.vue";
 export default {
+  mounted() {
+    this.$store.dispatch("getBMW");
+  },
+  computed: {
+    cars() {
+      return this.$store.getters.getBMW;
+    },
+  },
   data() {
     return {
       component: "",

@@ -1,49 +1,18 @@
 <template>
   <div class="BuyFind">
     <h2>You want to find: {{ carName }}</h2>
-    <h3>Are you sure?</h3>
-    <div class="card"></div>
-    <div class="otherParametrs">
-      <div class="otherParametrsBtn">
-        <!-- <button
-          type="button"
-          class="burronChooseIwant"
-          @click="component = 'OtherOptions'"
-        >
-          Other parameters
-          <img src="@/assets/img/parametrs.png" alt="" />
-        </button>
-        <button type="button" class="burronChooseIwant" @click="component = ''">
-          Close parameters
-          <img src="@/assets/img/close.png" alt="" />
-        </button> -->
-        <button
-          type="button"
-          class="burronChooseIwant"
-          @click="component = 'CarCard'"
-        >
-          Yes
-        </button>
-        <button type="button" class="burronChooseIwant" @click="component = ''">
-          No
-        </button>
-      </div>
-      <keep-alive>
-        <component :is="component"></component>
-      </keep-alive>
-    </div>
+    <h5>{{ cars }}</h5>
   </div>
 </template>
 
 <script>
-import OtherOptions from "./OtherOptions.vue";
 export default {
   mounted() {
-    this.$store.dispatch("getBMW");
+    this.$store.dispatch("getInfoCar");
   },
   computed: {
     cars() {
-      return this.$store.getters.getBMW;
+      return this.$store.getters.getInfoCar;
     },
   },
   data() {
@@ -61,11 +30,20 @@ export default {
       ],
     };
   },
-  components: { OtherOptions },
 };
 </script>
 
 <style>
+.sub {
+  color: deeppink;
+}
+.card {
+  background: green !important;
+  margin: 20px;
+}
+.CarName {
+  background: deeppink;
+}
 .carType {
   background: #1a1a1a;
   color: white;

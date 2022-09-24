@@ -20,7 +20,7 @@ export default {};
   margin-top: 200px;
   padding: 10px 0;
   text-align: center;
-  background: linear-gradient(307.72deg, #f3cd06 2.04%, #ec0000 98.59%);
+  background: linear-gradient(307.72deg, #f32206 2.04%, #f30694 98.59%);
   border-radius: 10px;
   overflow: hidden;
   > h2 {

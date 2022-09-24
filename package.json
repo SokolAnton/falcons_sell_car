@@ -12,6 +12,7 @@
     "bootstrap": "^5.2.1",
     "bootstrap-vue": "^2.22.0",
     "core-js": "^3.8.3",
+    "cors": "^2.8.5",
     "material-design-icons-iconfont": "^6.7.0",
     "nu-modal-vue": "^0.5.0",
     "vue": "^2.6.14",

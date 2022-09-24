@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="BuyFind">
     <h2>You want to find: {{ carName }}</h2>
     <div class="types">
@@ -49,4 +49,4 @@ export default {
 .BuyFind {
   text-align: center;
 }
-</style>
+</style> -->

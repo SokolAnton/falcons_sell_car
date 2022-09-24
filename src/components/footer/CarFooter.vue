@@ -3,7 +3,7 @@
     <div class="footer--container container">
       <div class="container--leftInfo leftInfo">
         <div class="leftInfo--img">
-          <img src="@/assets/img/Falcon'sFooter.png" alt="" height="100" />
+          <img src="@/assets/img/Falcon's.png" alt="" height="100" />
         </div>
         <div class="leftInfo--titleInfo titleInfo">
           <p>Falcon's</p>
